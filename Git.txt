@@ -1,0 +1,48 @@
+Here are the essential Git commands organized by category:
+Setup
+	•	git config --global user.name "Name" — set username
+	•	git config --global user.email "email" — set email
+Starting a Repo
+	•	git init — initialize a new repo
+	•	git clone <url> — clone a remote repo
+Staging & Committing
+	•	git status — show working tree status
+	•	git add <file> — stage a file
+	•	git add . — stage all changes
+	•	git commit -m "message" — commit staged changes
+	•	git commit --amend — edit the last commit
+Branching
+	•	git branch — list branches
+	•	git branch <name> — create a branch
+	•	git checkout <branch> — switch branches
+	•	git checkout -b <branch> — create and switch
+	•	git merge <branch> — merge into current branch
+	•	git branch -d <branch> — delete a branch
+Remote
+	•	git remote -v — list remotes
+	•	git remote add origin <url> — add a remote
+	•	git fetch — download remote changes
+	•	git pull — fetch and merge
+	•	git push origin <branch> — push to remote
+Inspection
+	•	git log — commit history
+	•	git log --oneline --graph — compact visual history
+	•	git diff — show unstaged changes
+	•	git diff --staged — show staged changes
+	•	git blame <file> — show who changed each line
+Undoing
+	•	git restore <file> — discard working directory changes
+	•	git restore --staged <file> — unstage a file
+	•	git revert <commit> — create an undo commit
+	•	git reset --hard <commit> — reset to a commit (destructive)
+Stashing
+	•	git stash — stash current changes
+	•	git stash pop — apply and drop latest stash
+	•	git stash list — list all stashes
+Tags
+	•	git tag <name> — create a lightweight tag
+	•	git tag -a <name> -m "msg" — annotated tag
+	•	git push origin --tags — push tags to remote
+Rebase & Cherry-pick
+	•	git rebase <branch> — rebase onto a branch
+	•	git cherry-pick <commit> — apply a specific commit
